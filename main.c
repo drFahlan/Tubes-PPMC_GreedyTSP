@@ -1,10 +1,8 @@
 /* EL2208 Praktikum Pemecahan Masalah dengan C 2023/2024
 * Modul            : Tubes - Travelling Salesmen Problem 
-* Hari dan Tanggal :
 * Nama (NIM)       : Dwi Rezky Fahlan (18321018)
 * Asisten (NIM)    : Emmanuella Pramudita Rumanti (13220031)
 * Nama File        : main.c
-* Deskripsi        : 
 */
 
 #include <stdio.h>
