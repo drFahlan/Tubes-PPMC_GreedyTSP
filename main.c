@@ -1,8 +1,10 @@
 /* EL2208 Praktikum Pemecahan Masalah dengan C 2023/2024
 * Modul            : Tubes - Travelling Salesmen Problem 
+* Hari dan Tanggal :
 * Nama (NIM)       : Dwi Rezky Fahlan (18321018)
 * Asisten (NIM)    : Emmanuella Pramudita Rumanti (13220031)
 * Nama File        : main.c
+* Deskripsi        : 
 */
 
 #include <stdio.h>
@@ -114,7 +116,7 @@ int main() {
 
     int row = 0;
     while (fgets(buffer, 1024, fp) && row < MAX_ROWS) {
-        char *value = strtok(buffer, ";\n");
+        char *value = strtok(buffer, ",\n");
         int column = 0;
         while (value != NULL && column < MAX_COLUMNS) {
             //copy tokenized value to matrix
@@ -122,7 +124,7 @@ int main() {
             mat[row][column][MAX_VALUE_LENGTH - 1] = '\0'; //ensure null-termination
             
             column++;
-            value = strtok(NULL, ";\n");
+            value = strtok(NULL, ",\n");
         }
         row++;
     }
